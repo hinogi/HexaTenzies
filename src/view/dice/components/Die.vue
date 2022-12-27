@@ -1,3 +1,17 @@
+<template>
+  <div class="die-face">
+    <h2 class="die-num">{{ value }}</h2>
+  </div>
+</template>
+
+<script setup lang="ts">
+interface DieProps {
+  value: number
+}
+const props = defineProps<DieProps>();
+</script>
+
+<style>
 .die-face {
     display: flex;
     justify-content: center;
@@ -14,3 +28,5 @@
 .die-num {
     font-size: 2rem;
 }
+
+</style>

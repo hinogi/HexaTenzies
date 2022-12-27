@@ -1,3 +1,11 @@
+<template>
+    <Dice />
+</template>
+<script setup lang="ts">
+import Dice from './view/dice/Dice.vue'
+
+</script>
+<style>
 * {
   box-sizing: border-box;
 }
@@ -27,3 +35,7 @@ main {
   grid-template: auto auto / repeat(5, 1fr);
   gap: 20px
 }
+
+</style>
+
+
